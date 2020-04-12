@@ -15,8 +15,7 @@ outputs:
 
 runs:
     using: 'docker'
-    image: 'docker://alpine/semver:5.5.0'
-    entrypoint: './scripts/bump_version.sh'
+    image: 'Dockerfile'
     args:
         - ${{ inputs.release }}
         - ${{ inputs.current_version }}
